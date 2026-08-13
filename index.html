@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Anas | Frontend Engineer</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Hey Hello Button -->
+<button class="hello-btn" onclick="openChat()">
+    👋 Hey, Hello
+</button>
+
+<!-- Chat Section -->
+<div class="chat-box" id="chatBox">
+
+    <div class="chat-header">
+        <div>
+            <h3>Let's Talk 👋</h3>
+            <span>Usually replies instantly</span>
+        </div>
+
+        <button class="close-btn" onclick="closeChat()">×</button>
+    </div>
+
+
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot">
+            Hey! 👋 Thanks for visiting my portfolio.
+            How can I help you?
+        </div>
+    </div>
+
+
+    <div class="chat-input">
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message..."
+            onkeydown="handleEnter(event)"
+        >
+
+        <button onclick="sendMessage()">➤</button>
+    </div>
+
+</div>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="#home" class="logo"> ANAS<span>.</span> </a>
+
+      <nav id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-btn"> Let's Talk <span>↗</span> </a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="available">
+          <span></span>
+          AVAILABLE FOR WORK
+        </div>
+
+        <p class="small-title">FRONTEND ENGINEER / WEB DEVELOPER</p>
+
+        <h1>
+          I BUILD
+          <span>DIGITAL</span>
+          EXPERIENCES.
+        </h1>
+
+        <p class="hero-text">
+          I'm Anas, a frontend developer focused on creating modern, responsive
+          and interactive websites with clean code and beautiful interfaces.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="primary-btn">
+            View My Work
+            <span>↗</span>
+          </a>
+
+          <a href="#contact" class="secondary-btn"> Let's Connect </a>
+        </div>
+
+        <div class="stats">
+          <div>
+            <strong>03+</strong>
+            <small>Years<br />Learning</small>
+          </div>
+
+          <div>
+            <strong>20+</strong>
+            <small>Projects<br />Built</small>
+          </div>
+
+          <div>
+            <strong>∞</strong>
+            <small>Ideas<br />Creating</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTO AREA -->
+      <div class="hero-image-area">
+        <div class="circle circle-one"></div>
+        <div class="circle circle-two"></div>
+
+        <div class="image-card">
+          <!-- YOUR PHOTO -->
+          <img src="anas.jpg" alt="Anas" />
+
+          <div class="image-label">
+            <span></span>
+            ANAS / FRONTEND ENGINEER
+          </div>
+        </div>
+
+        <!-- FLOATING CODE CARD -->
+        <div class="floating-code">
+          <div class="code-dots">
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <pre><span>const</span> developer = {
+  name: <b>"Anas"</b>,
+  role: <b>"Frontend"</b>,
+  passion: <b>"Coding"</b>
+};</pre>
+        </div>
+
+        <!-- FLOATING STACK CARD -->
+        <div class="stack-card">
+          <small>MY STACK</small>
+
+          <div>
+            <b>HTML</b>
+            <b>CSS</b>
+            <b>JS</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker">
+      <div class="ticker-track">
+        <span>HTML5</span>
+        <b>✦</b>
+
+        <span>CSS3</span>
+        <b>✦</b>
+
+        <span>JAVASCRIPT</span>
+        <b>✦</b>
+
+        <span>RESPONSIVE DESIGN</span>
+        <b>✦</b>
+
+        <span>UI / UX</span>
+        <b>✦</b>
+
+        <span>WEB ANIMATION</span>
+        <b>✦</b>
+
+        <span>HTML5</span>
+        <b>✦</b>
+
+        <span>CSS3</span>
+        <b>✦</b>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-number">01 / ABOUT ME</div>
+
+      <div class="about-grid">
+        <h2>
+          Turning ideas into
+          <span>digital experiences.</span>
+        </h2>
+
+        <div>
+          <p class="large-text">
+            I'm Anas, a frontend developer who loves creating interfaces that
+            are simple, fast and visually memorable.
+          </p>
+
+          <p>
+            I enjoy taking an idea from a blank canvas to a complete responsive
+            website. I focus on clean structure, modern CSS, JavaScript
+            interactions and smooth animations.
+          </p>
+
+          <a href="#contact" class="text-link">
+            Let's build something together →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-number">02 / EXPERTISE</div>
+
+      <div class="section-heading">
+        <h2>What I <span>work with.</span></h2>
+
+        <p>My current toolkit for creating modern web experiences.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-top">
+            <small>01</small>
+            <strong>&lt;/&gt;</strong>
+          </div>
+
+          <h3>HTML5</h3>
+
+          <p>Semantic structure, accessibility and clean markup.</p>
+
+          <div class="progress">
+            <span style="width: 95%"></span>
+          </div>
+
+          <small>95%</small>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <small>02</small>
+            <strong>CSS</strong>
+          </div>
+
+          <h3>CSS3</h3>
+
+          <p>Responsive layouts, animations and modern styling.</p>
+
+          <div class="progress">
+            <span style="width: 92%"></span>
+          </div>
+
+          <small>92%</small>
+        </div>
+
+        <div class="skill-card featured">
+          <div class="skill-top">
+            <small>03</small>
+            <strong>JS</strong>
+          </div>
+
+          <h3>JavaScript</h3>
+
+          <p>Interactive interfaces and dynamic web experiences.</p>
+
+          <div class="progress">
+            <span style="width: 82%"></span>
+          </div>
+
+          <small>82%</small>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-top">
+            <small>04</small>
+            <strong>UI</strong>
+          </div>
+
+          <h3>Responsive UI</h3>
+
+          <p>Interfaces that work beautifully on every screen.</p>
+
+          <div class="progress">
+            <span style="width: 94%"></span>
+          </div>
+
+          <small>94%</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-number">03 / SELECTED WORK</div>
+
+      <div class="section-heading">
+        <h2>Selected <span>projects.</span></h2>
+
+        <p>A few projects that represent my frontend skills.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project big-project">
+          <div class="project-image project-one">
+            <div class="project-logo">ANAS<span>.</span></div>
+          </div>
+
+          <div class="project-info">
+            <small>01 / PORTFOLIO</small>
+
+            <h3>Creative Portfolio</h3>
+
+            <p>
+              Modern personal portfolio with smooth animations and responsive
+              UI.
+            </p>
+
+            <a href="#"> View Project ↗ </a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image project-two">
+            <div class="dashboard">
+              <h4>Dashboard</h4>
+
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <small>02 / JAVASCRIPT</small>
+
+            <h3>Dashboard UI</h3>
+
+            <p>Clean dashboard concept focused on usability.</p>
+
+            <a href="#"> View Project ↗ </a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image project-three">
+            <div class="landing-text">
+              CREATE<br />
+              <span>MORE.</span>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <small>03 / RESPONSIVE CSS</small>
+
+            <h3>Landing Experience</h3>
+
+            <p>Responsive landing page with cinematic hover effects.</p>
+
+            <a href="#"> View Project ↗ </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-number">04 / CONTACT</div>
+
+      <h2>
+        Have an idea?
+        <span>Let's make it real.</span>
+      </h2>
+
+      <p>
+        I'm open to frontend opportunities, collaborations and interesting
+        projects.
+      </p>
+
+      <a href="mailto:your@email.com" class="primary-btn">
+        Say Hello
+        <span>↗</span>
+      </a>
+
+      <div class="contact-circle">ANAS • FRONTEND • 2026 •</div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo">ANAS<span>.</span></div>
+
+      <p>Designed & built with HTML, CSS & JavaScript.</p>
+
+      <p>© 2026 Anas</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- CHAT WINDOW -->
+<div class="chat-box" id="chatBox">
+
+    <!-- Chat Header -->
+    <div class="chat-header">
+
+        <div>
+            <h3>Let's Talk 👋</h3>
+            <span>I'm available for work</span>
+        </div>
+
+        <!-- CLOSE BUTTON -->
+        <button class="chat-close" onclick="closeChat()">
+            ×
+        </button>
+
+    </div>
+
+
+    <!-- Chat Body -->
+    <div class="chat-body">
+
+        <div class="bot-message">
+            Hey! 👋
+            <br>
+            Thanks for visiting my portfolio.
+            <br>
+            How can I help you?
+        </div>
+
+    </div>
+
+
+    <!-- Chat Input -->
+    <div class="chat-input">
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Write a message..."
+        >
+
+        <button onclick="sendMessage()">
+            ➤
+        </button>
+
+    </div>
+
+</div>
+  </body>
+</html>
